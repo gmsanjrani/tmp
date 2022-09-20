@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import cmgOrNotTabletImg from '../../../../Assets/Images/ComingOrNot/Tablet.png';
-import cmgOrNotIphoneImg from '../../../../Assets/Images/ComingOrNot/Iphone.png';
-
+// import cmgOrNotTabletImg from '../../../../Assets/Images/ComingOrNot/Tablet.png';
+// import cmgOrNotIphoneImg from '../../../../Assets/Images/ComingOrNot/Iphone.png';
+import diceMobile from '../../../../Assets/Images/dice/dice mobile.png'
+import diceTablet from '../../../../Assets/Images/dice/dice tablet.png'
 
 const Iphone = styled.img.attrs({
   style: ({ scroll }) => ({
@@ -45,8 +46,8 @@ class ComingOrNotImages extends Component {
 
     return (
       <React.Fragment>
-        <Tablet src={cmgOrNotTabletImg} scroll={scrollPercent} alt="cmgOrNotTablet" />
-        <Iphone src={cmgOrNotIphoneImg} scroll={scrollPercent} alt="cmgOrNotIphone" />
+        <Tablet src={diceTablet} scroll={scrollPercent} alt="cmgOrNotTablet" />
+        <Iphone src={diceMobile} scroll={scrollPercent} alt="cmgOrNotIphone" />
       </React.Fragment>
     );
   }

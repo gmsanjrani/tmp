@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import voistrapHomeImg from '../../../../Assets/Images/Voistrap/Home.png';
-import voistrapMeetingsImg from '../../../../Assets/Images/Voistrap/Meetings.png';
-import voistrapPeopleImg from '../../../../Assets/Images/Voistrap/People.png';
-import voistrapScoreImg from '../../../../Assets/Images/Voistrap/Score.png';
+// import voistrapHomeImg from '../../../../Assets/Images/Voistrap/Home.png';
+// import voistrapMeetingsImg from '../../../../Assets/Images/Voistrap/Meetings.png';
+// import voistrapPeopleImg from '../../../../Assets/Images/Voistrap/People.png';
+// import voistrapScoreImg from '../../../../Assets/Images/Voistrap/Score.png';
+// import portHome from '../../../../Assets/Images/wolftechs/wolftechs mobile.png'
+
+import herokiHome from '../../../../Assets/Images/heroki/heroki home.png'
+import herokiCloud from '../../../../Assets/Images/heroki/heroki cloud.png'
+import herokiDocs from '../../../../Assets/Images/heroki/heroki docs.png'
+import herokiFeatures from '../../../../Assets/Images/heroki/heroki features.png'
 
 
 const VoistrapPhoneHome = styled.img.attrs({
@@ -74,10 +80,10 @@ class VoistrapImages extends Component {
     scrollPercent -= scrollOffsetInPercent;
     return (
       <React.Fragment>
-        <VoistrapPhonePeople src={voistrapPeopleImg} scroll={scrollPercent} alt="voistrapPeople" />
-        <VoistrapPhoneScore src={voistrapScoreImg} scroll={scrollPercent} alt="voistrapScore" />
-        <VoistrapPhoneMeetings src={voistrapMeetingsImg} scroll={scrollPercent} alt="voistrapMeetings" />
-        <VoistrapPhoneHome src={voistrapHomeImg} scroll={scrollPercent} alt="voistrapHome" />
+        <VoistrapPhonePeople src={herokiDocs} scroll={scrollPercent} alt="voistrapPeople" />
+        <VoistrapPhoneScore src={herokiFeatures} scroll={scrollPercent} alt="voistrapScore" />
+        <VoistrapPhoneMeetings src={herokiCloud} scroll={scrollPercent} alt="voistrapMeetings" />
+        <VoistrapPhoneHome src={ herokiHome} scroll={scrollPercent} alt="voistrapHome" />
       </React.Fragment>
     );
   }

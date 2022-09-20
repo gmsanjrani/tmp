@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import englishHome from '../../../../Assets/Images/Kosen/EnglishHome.png';
-import jpnHome from '../../../../Assets/Images/Kosen/JpnHome.png';
-import player from '../../../../Assets/Images/Kosen/Player.png';
+// import englishHome from '../../../../Assets/Images/Kosen/EnglishHome.png';
+// import jpnHome from '../../../../Assets/Images/Kosen/JpnHome.png';
+// import player from '../../../../Assets/Images/Kosen/Player.png';
+
+import storeHome from '../../../../Assets/Images/store/store home.png'
+import storeDetails from '../../../../Assets/Images/store/store details.png'
+import storeFooter from '../../../../Assets/Images/store/store footer.png'
+
 
 const JapaneseTab = styled.img.attrs({
   style: ({ scroll }) => ({
@@ -67,9 +72,9 @@ class KosenImages extends Component {
     }
     return (
       <React.Fragment>
-        <PlayerTab src={player} scroll={scrollPercent} alt="kosenPlayer" />
-        <EnglishTab src={englishHome} scroll={scrollPercent} alt="kosenEnglish" />
-        <JapaneseTab src={jpnHome} scroll={scrollPercent} alt="kosenJapanese" />
+        <PlayerTab src={storeFooter} scroll={scrollPercent} alt="kosenPlayer" />
+        <EnglishTab src={storeDetails} scroll={scrollPercent} alt="kosenEnglish" />
+        <JapaneseTab src={storeHome} scroll={scrollPercent} alt="kosenJapanese" />
       </React.Fragment>
     );
   }

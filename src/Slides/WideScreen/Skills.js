@@ -97,16 +97,16 @@ class Skills extends Component {
           <div>
             React
             <br />
-            React Native
+            Next.js
             <br />
             Node.js
             <br />
             <br />
-            Rapid Prototyping
+            Python
             <br />
             Functional Programming
             <br />
-            Interaction Development
+             Web Scraping
             <br />
           </div>
           <div>
@@ -117,11 +117,11 @@ class Skills extends Component {
             Application Architecture
             <br />
             <br />
-            Sketch
+            Html
             <br />
-            Principle
+            Css
             <br />
-            Abstract
+            JavaScript
             <br />
           </div>
         </SkillsList>

@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import homeImg from '../../../../Assets/Images/WhatsMyFood/Home.png';
-import restaurantImg from '../../../../Assets/Images/WhatsMyFood/Restaurant.png';
-import addRestaurantImg from '../../../../Assets/Images/WhatsMyFood/AddRestaurant.png';
-import addFoodImg from '../../../../Assets/Images/WhatsMyFood/AddFood.png';
+// import homeImg from '../../../../Assets/Images/WhatsMyFood/Home.png';
+// import restaurantImg from '../../../../Assets/Images/WhatsMyFood/Restaurant.png';
+// import addRestaurantImg from '../../../../Assets/Images/WhatsMyFood/AddRestaurant.png';
+// import addFoodImg from '../../../../Assets/Images/WhatsMyFood/AddFood.png';
+import portHome from '../../../../Assets/Images/portfolio/port home.png'
+import portContact from '../../../../Assets/Images/portfolio/port contact.png'
+import portAbout from '../../../../Assets/Images/portfolio/port about.png'
+import portExperience from '../../../../Assets/Images/portfolio/port experience.png'
 
 const Restaurant = styled.img.attrs({
   style: ({ scroll }) => ({
@@ -74,10 +78,10 @@ class WhatsMyFoodImages extends Component {
     scrollPercent -= scrollOffsetInPercent;
     return (
       <React.Fragment>
-        <AddFood src={addFoodImg} scroll={scrollPercent} alt="addFood" />
-        <AddRestaurant src={addRestaurantImg} scroll={scrollPercent} alt="addRestaurant" />
-        <Home src={homeImg} scroll={scrollPercent} alt="Home" />
-        <Restaurant src={restaurantImg} scroll={scrollPercent} alt="Restaurant" />
+        <AddFood src={portExperience} scroll={scrollPercent} alt="addFood" />
+        <AddRestaurant src={portContact} scroll={scrollPercent} alt="addRestaurant" />
+        <Home src={portAbout} scroll={scrollPercent} alt="Home" />
+        <Restaurant src={portHome} scroll={scrollPercent} alt="Restaurant" />
       </React.Fragment>
     );
   }

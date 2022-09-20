@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import dots from '../../../../Assets/Images/Showcase/Dots.png';
-import bubbles from '../../../../Assets/Images/Showcase/Bubble.png';
-import paths from '../../../../Assets/Images/Showcase/Paths.png';
-import bigBubble from '../../../../Assets/Images/Showcase/BigBubble.png';
+// import dots from '../../../../Assets/Images/Showcase/Dots.png';
+// import bubbles from '../../../../Assets/Images/Showcase/Bubble.png';
+// import paths from '../../../../Assets/Images/Showcase/Paths.png';
+// import bigBubble from '../../../../Assets/Images/Showcase/BigBubble.png';
+import gymHome from '../../../../Assets/Images/gym/gym home.png'
+import gymOffers from '../../../../Assets/Images/gym/gym offers.png'
+import gymPlans from '../../../../Assets/Images/gym/gym plans.png'
+import gymTestimonials from '../../../../Assets/Images/gym/gym testimonials.png'
 
 
 const Dots = styled.img.attrs({
@@ -73,10 +77,10 @@ class VoistrapWebImages extends Component {
     scrollPercent -= scrollOffsetInPercent;
     return (
       <React.Fragment>
-        <Paths src={paths} scroll={scrollPercent} alt="paths" />
-        <BigBubble src={bigBubble} scroll={scrollPercent} alt="bigBubble" />
-        <Bubbles src={bubbles} scroll={scrollPercent} alt="bubbles" />
-        <Dots src={dots} scroll={scrollPercent} alt="dots" />
+        <Paths src={gymTestimonials} scroll={scrollPercent} alt="paths" />
+        <BigBubble src={gymOffers} scroll={scrollPercent} alt="bigBubble" />
+        <Bubbles src={gymPlans} scroll={scrollPercent} alt="bubbles" />
+        <Dots src={ gymHome} scroll={scrollPercent} alt="dots" />
       </React.Fragment>
     );
   }

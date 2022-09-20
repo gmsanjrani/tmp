@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import teslaTyreImg from '../../../../Assets/Images/Tesla/Tyre.png';
-import teslaHeatImg from '../../../../Assets/Images/Tesla/Heat.png';
-import teslaLockImg from '../../../../Assets/Images/Tesla/Lock.png';
-import teslaBatteryImg from '../../../../Assets/Images/Tesla/Battery.png';
+// import teslaTyreImg from '../../../../Assets/Images/Tesla/Tyre.png';
+// import teslaHeatImg from '../../../../Assets/Images/Tesla/Heat.png';
+// import teslaLockImg from '../../../../Assets/Images/Tesla/Lock.png';
+// import teslaBatteryImg from '../../../../Assets/Images/Tesla/Battery.png';
+import wolfHome from '../../../../Assets/Images/wolftechs/wolf home.png'
+import wolfAbout from '../../../../Assets/Images/wolftechs/wolf about.png'
+import wolfContacts from '../../../../Assets/Images/wolftechs/wolf contacts.png'
+import wolfPremius from '../../../../Assets/Images/wolftechs/wolf premius.png'
+import wolfFunfact from '../../../../Assets/Images/wolftechs/wolf funfact.png'
 
 
 const Heat = styled.img.attrs({
@@ -75,10 +80,10 @@ class TeslaImages extends Component {
 
     return (
       <React.Fragment>
-        <Lock src={teslaLockImg} scroll={scrollPercent} alt="teslaLock" />
-        <Battery src={teslaBatteryImg} scroll={scrollPercent} alt="teslaBattery" />
-        <Tyre src={teslaTyreImg} scroll={scrollPercent} alt="teslaTyre" />
-        <Heat src={teslaHeatImg} scroll={scrollPercent} alt="teslaHeat" />
+        <Lock src={wolfFunfact} scroll={scrollPercent} alt="teslaLock" />
+        <Battery src={ wolfPremius} scroll={scrollPercent} alt="teslaBattery" />
+        <Tyre src={ wolfAbout} scroll={scrollPercent} alt="teslaTyre" />
+        <Heat src={ wolfHome} scroll={scrollPercent} alt="teslaHeat" />
       </React.Fragment>
     );
   }
